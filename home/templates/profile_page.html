@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>EatElite</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Raleway", sans-serif
+        }
+        
+        body,
+        html {
+            height: 100%;
+            line-height: 1.8;
+        }
+        /* Full height image header */
+        
+        .bgimg-1 {
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-image: linear-gradient(rgba(0, 4, 40, 0.85), rgba(0, 78, 146, 0.85)), url("../../static/images/background.png");
+            min-height: 100%;
+        }
+        
+        .w3-bar .w3-button {
+            padding: 16px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+        <div class="w3-bar w3-white w3-card" id="myNavbar">
+            <img href="home" src="../../static/images/eatelite.png" style="height: 10%; width: 10%;" class="w3-bar-item w3-button w3-wide"></img>
+            <!-- Right-sided navbar links -->
+            <div class="w3-right w3-hide-small">
+                <a href="../home" class="w3-bar-item w3-button"><i class="fa fa-home"></i> HOME</a>
+                <a href="#" class="w3-bar-item w3-button"><i class="fa fa-user"></i> PROFİLE</a>
+                <a href="../home#team" class="w3-bar-item w3-button"><i class="fa fa-users"></i> TEAM</a>
+                <a href="../home#pricing" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> PRICING</a>
+                <a href="../home#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+            </div>
+            <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+            <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Sidebar on small screens when clicking the menu icon -->
+    <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+        <a href="#home" onclick="w3_close()" class="w3-bar-item w3-button">HOME</a>
+        <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
+        <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">PRICING</a>
+        <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+    </nav>
+
+    <div style="padding-left: 30%; background-image: linear-gradient(rgba(0, 19, 187, 0.85), rgba(73, 88, 101, 0.85))">
+        <div class="w3-container w3-center" style="padding-top: 7.5%; height: fit-content; width: fit-content;" id="pricing">
+            <div>
+                <img src="../../static/images/team_member2.jpg" alt="John" style="width:80%">
+                <h1>Olivia Cole</h1>
+                <p class="title">Example User</p>
+                <p>Harvard University</p>
+                <a href="#"><i class="fa fa-dribbble"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <p><a href="#" class="w3-button w3-white w3-padding-large">Contact</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-center w3-padding-64" style="background-image: linear-gradient(rgba(73, 88, 101, 0.85), rgba(0, 19, 187, 0.85))">
+        <a href="#" class="w3-button w3-light-grey "><i class="fa fa-arrow-up w3-margin-right "></i>To the top</a>
+        <p class="w3-small " style="padding-top: 1%;">&copy; EatElite 2023</p>
+    </footer>
+
+</body>
+
+
+
+</html>
